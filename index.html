@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Keren</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin-top: 47%;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: calc(100% - 12px);
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+    table {
+        margin-top: 100px;
+      border-collapse: collapse;
+      width: 1000px;
+      /* margin: 20px auto; */
+      
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Perpustakan </h2>
+    <form >
+      <div class="form-group">
+        <label for="Judul">Judul</label>
+        <input type="text" id="judul" name="nama" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Pengarang :</label>
+        <input type="text" id="pengarang" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="pesan">Jumlah halaman : </label>
+        <input type="text" id="hal">
+      </div>
+
+      <input type="submit" onclick="addbook(event);" value="Kirim">
+    </form>
+  </div>
+ <section>
+  <table id="table">
+    <thead>
+      <tr>
+        <th>NO</th>
+        <th>Judul</th>
+        <th>Pengarang buku</th>
+        <th>Halaman</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <!-- Tambahkan baris seperti di atas untuk data lainnya -->
+    </tbody>
+  </table>
+</section>
+
+</body>
+<script src="script.js"></script>
+</html>
